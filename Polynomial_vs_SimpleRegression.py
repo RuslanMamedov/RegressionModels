@@ -7,8 +7,8 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('kc_house_data.csv')
-X = dataset.iloc[:, 5:6].values #picked square footage as an independent variable
-y = dataset.iloc[:, 2:3].values
+X = dataset.iloc[:, 5:6].values #picked square footage as an independent variable (predictor)
+y = dataset.iloc[:, 2:3].values #house prices as dependent variable 
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.cross_validation import train_test_split
