@@ -1,2 +1,2 @@
 # RegressionModels
-Predicting house prices with regression models
+Predicting housing prices for with regression techniques
