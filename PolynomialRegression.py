@@ -47,6 +47,12 @@ lin_reg_2.fit(X_poly, y_train) #applying linear regression to the polynomial sub
 #Prediction
 y_pred = lin_reg_2.predict(poly_reg.fit_transform(X_test))
 
+# Applying k-Fold Cross Validation
+from sklearn.cross_validation import cross_val_score
+accuracies = cross_val_score(estimator = regressor, X = X_train, y = y_train, cv = 10)
+print ('The mean accuracy for this model is ', accuracies.mean())
+print ('The standard deviation is', accuracies.std())
+
 #Assessing the quality of fit
 from sklearn.metrics import r2_score
 print ('R-squared score for this model is ',r2_score(y_test,y_pred))
