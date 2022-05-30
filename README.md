@@ -1,2 +1,2 @@
-# Regression Models for predicting housing prices
+# Various Regression Models for predicting housing prices
 
